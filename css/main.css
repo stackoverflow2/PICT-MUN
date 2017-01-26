@@ -14,3 +14,44 @@
     background-size: cover;
 }
 
+.carousel {
+  max-height: 670px;
+  overflow: hidden;
+}
+
+ .item img {
+    width: 100%;
+    height: auto;
+  }
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: antiquewhite;
+   
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color:darkblue;
+}
+.glyphicon-chevron-left{
+    
+    
+    background-color: darkblue;
+    box:10px;
+}
+
+.glyphicon-chevron-right{
+    
+    
+    background-color: darkblue;
+    box:10px;
+}
