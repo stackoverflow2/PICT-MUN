@@ -42,16 +42,16 @@
     margin: 5px;
     background-color:darkblue;
 }
-.glyphicon-chevron-left{
-    
-    
-    background-color: darkblue;
-    box:10px;
-}
 
-.glyphicon-chevron-right{
-    
-    
-    background-color: darkblue;
-    box:10px;
-}
+
+.new_html_code {
+      width:600px;
+      height:900px;
+      min-width:150px;
+      min-height:100px;
+      max-width:1300px;
+      max-height:1300px;
+      overflow: hidden;
+      display: block;
+      border:1px solid red;
+    }
