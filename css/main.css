@@ -1,14 +1,40 @@
-body{
-    
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/roboto/Roboto-Bold.wotf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato/Lato-Bold.wotf);
+}
+
+body {
     position: relative;
 }
 
-.parallax{
-    
-        
-    
-    min-height: 500px; 
+h1 {
+    font-family: Tahoma;
+}
 
+nav {
+    opacity: 0.9;
+}
+
+.navbar-nav li a:hover {
+    color: dodgerblue !important;
+    background-color: white !important;
+}
+
+#home {
+    perspective: 1000px;
+    background-color: black;
+    width: 100%;
+}
+
+.parallax {
+    z-index: -1;
+    transform: preserve-3d;
+    min-height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,34 +42,37 @@ body{
 }
 
 .carousel {
-  max-height: 670px;
-  overflow: hidden;
+    max-height: 700px;
+    overflow: hidden;
 }
-
- .item img {
+.item img {
     width: 100%;
     height: auto;
-  }
+}
 
 .carousel-indicators li {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     margin: 5px;
     text-indent: 0;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     background-color: antiquewhite;
-   
+    opacity: 0.8;
 }
+
 .carousel-indicators .active {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     margin: 5px;
     background-color:darkblue;
 }
 
+.carousel-control {
+    width: 10%;
+}
 
 .slider1_uncoming_events {
       width:600px;
@@ -59,4 +88,22 @@ body{
       padding-left: 50px;
       margin-left: 50px;
      box-shadow: 10px;
+}
+
+.pictmun {
+    vertical-align: text-top;
+    color: dodgerblue;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.jumbotron {
+    margin: 10px;
+}
+
+#about {
+    background-color: dodgerblue;
 }

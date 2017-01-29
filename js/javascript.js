@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  $('body').scrollspy({target: ".navbar", offset: 50});   
+  $('body').scrollspy({target: ".navbar", offset: 1000});   
   $("#myNavbar a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
