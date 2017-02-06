@@ -14,6 +14,7 @@ $(document).ready(function () {
             });
         }
     });
+    
     (function ($) {
 
         //Function to animate slider captions 
@@ -56,31 +57,41 @@ $(document).ready(function () {
 
 
         var home = parseInt($('#home').position().top, 10),
-            about = parseInt($('#about').position().top, 10),
-            gallary = parseInt($('#gallary').position().top, 10),
-            contactus = parseInt($('#contactus').position().top, 10);
+        about = parseInt($('#about').position().top, 10),
+        events = parseInt($('#events').position().top, 10),
+        contactus = parseInt($('#contactus').position().top, 10);
         contactus = contactus - 200;
-        console.log(home, about, gallary, contactus);
+        console.log(home, about, events, contactus);
         $('#nav-home').addClass('active');
         $('#nav-about').removeClass('active');
-        $('#nav-gallary').removeClass('active');
+        $('#nav-events').removeClass('active');
         $('#nav-contactus').removeClass('active');
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             console.log(scroll);
             $('#nav-home').removeClass('active');
             $('#nav-about').removeClass('active');
-            $('#nav-gallary').removeClass('active');
+            $('#nav-events').removeClass('active');
             $('#nav-contactus').removeClass('active');
             if (scroll >= home && scroll < about) {
                 $('#nav-home').addClass('active');
-            } else if (scroll >= about && scroll < gallary) {
+            } else if (scroll >= about && scroll < events) {
                 $('#nav-about').addClass('active');
-            } else if (scroll >= gallary && scroll < contactus) {
-                $('#nav-gallary').addClass('active');
+            } else if (scroll >= events && scroll < contactus) {
+                $('#nav-events').addClass('active');
             } else if (scroll >= contactus) {
                 $('#nav-contactus').addClass('active');
             }
+        });
+        
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var posit = $(this).offset().top;
+                var winTop = $(window).scrollTop();
+                if (posit < winTop + 1000) {
+                    $(this).addClass("slide");
+                }
+            });
         });
 
     })(jQuery);

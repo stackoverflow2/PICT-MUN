@@ -1,28 +1,24 @@
 @font-face {
-    font-family: "Roboto";
-    src: url(fonts/roboto/Roboto-Bold.ttf);
-}
-
-@font-face {
     font-family: Lato;
     src: url(fonts/Lato/Lato-Bold.ttf);
 }
 
-@font-face {
-    font-family: concert;
-    src: url(fonts/Concert_one/Concert_one-Regular.ttf);
-}
-
 body {
     position: relative;
+    padding: 0px;
+    margin: 0px;
 }
 
 h1 {
-    font-family: Lato;
+    font-family: Lato,cursive;
 }
 
 h2 {
-    font-family: Lato;
+    font-family: Lato,cursive;
+}
+
+h3 {
+    font-family: Lato,cursive;
 }
 
 nav {
@@ -85,65 +81,57 @@ nav {
 }
 
 #home h3{
-  animation-delay: 1s;
+    animation-delay: 1s;
 }
 #home h4 {
-  animation-delay: 2s;
+    animation-delay: 2s;
 }
 #home h2 {
-  animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .slide1 {
-    padding-top: 230px;
-    background-image: url(image/carousel1.jpg);
-      background-size: cover;
+    padding-top: 250px;
+    background-image: url(image/carousel3.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
 
 .slide2 {
     padding-top: 230px;
-  background-image: url(image/carousel1.jpg);
-      background-size: cover;
+    background-image: url(image/carousel1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
 
 .slide3 {
     padding-top: 230px;
-  background-image: url(image/carousel1.jpg);
-      background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.slide4 {
-    padding-top: 230px;
-  background-image: url(image/carousel1.jpg);
-      background-size: cover;
+    background-image: url(image/carousel2.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
 
 .slider1_uncoming_events {
-      width:600px;
-      height:620px;
-      min-width:150px;
-      min-height:100px;
-      max-width:1300px;
-      max-height:1300px;
-      overflow: hidden;
-      display: block;
-      margin-top: 50px;
-      background-color: aqua;
-      padding-left: 50px;
-      margin-left: 50px;
-     box-shadow: 10px;
+    width:600px;
+    height:620px;
+    min-width:150px;
+    min-height:100px;
+    max-width:1300px;
+    max-height:1300px;
+    overflow: hidden;
+    display: block;
+    margin-top: 50px;
+    background-color: aqua;
+    padding-left: 50px;
+    margin-left: 50px;
+    box-shadow: 10px;
 }
 
 .pictmun {
-    vertical-align: text-top;
+    padding-top: 10px;
     color: dodgerblue;
     text-align: center;
     position: absolute;
@@ -158,4 +146,137 @@ nav {
 
 #about {
     background-color: dodgerblue;
+}
+
+@media screen and (max-width: 992px)
+{
+    .think2{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .think1{
+        display: none;
+    }
+}
+
+.foot {
+    background-color: dodgerblue;
+}
+
+.copyright {
+    background-color: #0d80f0;
+}
+
+.event-head {
+    background-color: royalblue;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.3);
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.event-head p{
+    color: white;
+    font-family: Lato;
+    font-size: 35px;
+}
+
+#events1 a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.panel {
+    border: 1px solid dodgerblue; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0,.3);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid dodgerblue;
+    background-color: #fff !important;
+    color: dodgerblue;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: dodgerblue!important;
+    padding: 25px;
+    padding-top: 60px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-height: 250px;
+}
+
+.panel-body {
+    height: 130px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.modal-header {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.modal-footer .btn {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
