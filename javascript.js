@@ -61,37 +61,8 @@ $(document).ready(function () {
             interval: 3000,
             pause: "false"
         });
-
-
-        var home = parseInt($('#home').position().top, 10),
-        about = parseInt($('#about').position().top, 10),
-        events = parseInt($('#events').position().top, 10),
-        contactus = parseInt($('#contactus').position().top, 10);
-        contactus = contactus - 200;
-        console.log(home, about, events, contactus);
-        $('#nav-home').addClass('active');
-        $('#nav-about').removeClass('active');
-        $('#nav-events').removeClass('active');
-        $('#nav-contactus').removeClass('active');
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            console.log(scroll);
-            $('#nav-home').removeClass('active');
-            $('#nav-about').removeClass('active');
-            $('#nav-events').removeClass('active');
-            $('#nav-contactus').removeClass('active');
-            if (scroll >= home && scroll < about) {
-                $('#nav-home').addClass('active');
-            } else if (scroll >= about && scroll < events) {
-                $('#nav-about').addClass('active');
-            } else if (scroll >= events && scroll < contactus) {
-                $('#nav-events').addClass('active');
-            } else if (scroll >= contactus) {
-                $('#nav-contactus').addClass('active');
-            }
-        });
         
-        $(window).scroll(function() {
+        $(window).scroll(function(){
             $(".slideanim").each(function(){
                 var posit = $(this).offset().top;
                 var winTop = $(window).scrollTop();
@@ -100,6 +71,32 @@ $(document).ready(function () {
                 }
             });
         });
-
+        
+        $(window).scroll(function(){
+            $(".navbar").each(function(){
+                var posit = $(this).offset().top;
+                if (posit > 0) {
+                    $(".heading").addClass("zoomout");
+                    $(".heading").fadeOut(1000);
+                    $(".navi").addClass("trans_navup");
+                    $(".heading").removeClass("zoomin");
+                    $(".navi").removeClass("trans_navdown");
+                }
+            });
+        });
+        
+        $(window).scroll(function(){
+            $(".navbar").each(function(){
+                var posit = $(this).offset().top;
+                if (posit == 0) {
+                    $(".heading").addClass("zoomin");
+                    $(".heading").fadeIn(1000);
+                    $(".navi").addClass("trans_navdown");
+                    $(".heading").removeClass("zoomout");
+                    $(".navi").removeClass("trans_navup");
+                }
+            });
+        });
+        
     })(jQuery);
 });
