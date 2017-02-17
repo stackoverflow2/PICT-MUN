@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: Lato;
     src: url(fonts/Lato/Lato-Bold.ttf);
@@ -23,8 +21,31 @@ h3 {
     font-family: Lato,cursive;
 }
 
-nav {
-    opacity: 0.9;
+h4 {
+    font-family: Lato,cursive;
+}
+
+h5 {
+    font-family: Lato,cursive;
+}
+
+li {
+    font-family: Lato
+}
+
+.navi {
+    opacity: 1;
+    background-color: black;
+    z-index: 6;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.3);
+}
+
+.navi button {
+    background-color: white;
+}
+
+.heading {
+    background-color: white;
 }
 
 .navbar-nav li a:hover {
@@ -94,7 +115,7 @@ nav {
 
 .slide1 {
     padding-top: 250px;
-    background-image: url(image/carousel3.jpg);
+    background-image: url(image/poster_agenda.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -250,18 +271,63 @@ nav {
 }
 
 .slideanim {visibility:hidden;}
+
 .slide {
-    /* The name of the animation */
     animation-name: slide;
     -webkit-animation-name: slide; 
-    /* The duration of the animation */
     animation-duration: 1s; 
     -webkit-animation-duration: 1s;
-    /* Make the element visible */
     visibility: visible; 
 }
 
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+.zoomout {
+    animation-name: ZoomOut;
+    animation-duration: 1s;
+}
+
+.zoomin {
+    animation-name: ZoomIn;
+    animation-duration: 1s;
+}
+
+.trans_navup {
+    animation-name: translatenavUp;
+    animation-duration: 1s;
+}
+
+.trans_navdown {
+    animation-name: translatenavDown;
+    animation-duration: 1s;
+}
+
+.pos {
+    position: relative;
+}
+
+@media only screen and (min-width : 768px) {
+    .head1 {
+        display: block;
+    }
+    .head2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .head1 {
+        display: none;
+    }
+    .head2 {
+        display: block;
+    }
+    .logo1 {
+        padding-top: 15px;
+    }
+    .logo2 {
+        padding-top: 15px;
+    }
+}
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -280,5 +346,49 @@ nav {
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes ZoomOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale3d(.5,.5,.5);
+    } 
+}
+
+@keyframes ZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.5,.5,.5);
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+
+@keyframes translatenavUp {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-250%);
+    }
+}
+
+@keyframes translatenavDown {
+    0% {
+        transform: translateY(-250%);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
