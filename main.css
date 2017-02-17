@@ -3,7 +3,12 @@
     src: url(fonts/Lato/Lato-Bold.ttf);
 }
 
-body {
+@font-face {
+    font-family: Bro;
+    src: url(fonts/brothers-bold.ttf);
+}
+
+*{
     position: relative;
     padding: 0px;
     margin: 0px;
@@ -30,7 +35,33 @@ h5 {
 }
 
 li {
-    font-family: Lato
+    font-family: Lato,cursive;
+}
+
+#GoUp{
+    z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    color: transparent !important;
+}
+
+#GoUp span{
+    font-size: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.navbar {
+    margin: 0px 0px 0px 0px;
+}
+
+.navbar-brand {
+    font-family: Lato,cursive;
+    color: dodgerblue;
 }
 
 .navi {
@@ -44,13 +75,26 @@ li {
     background-color: white;
 }
 
-.heading {
+.navi button:hover {
     background-color: white;
+    color: dodgerblue;
+}
+
+.heading {
+    background-color: #eeeeee;
+}
+
+#register {
+    height: 100%;
 }
 
 .navbar-nav li a:hover {
     color: dodgerblue !important;
     background-color: white !important;
+}
+
+.dropdown-menu a{
+    color: dodgerblue !important;
 }
 
 #home {
@@ -103,6 +147,13 @@ li {
     width: 10%;
 }
 
+.slidetext{
+    position:absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
 #home h3{
     animation-delay: 1s;
 }
@@ -113,44 +164,20 @@ li {
     animation-delay: 3s;
 }
 
-.slide1 {
-    padding-top: 250px;
-    background-image: url(image/poster_agenda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+#news {
+    background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
-.slide2 {
-    padding-top: 230px;
-    background-image: url(image/carousel1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+.why {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.slide3 {
-    padding-top: 230px;
-    background-image: url(image/carousel2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.slider1_uncoming_events {
-    width:600px;
-    height:620px;
-    min-width:150px;
-    min-height:100px;
-    max-width:1300px;
-    max-height:1300px;
-    overflow: hidden;
-    display: block;
-    margin-top: 50px;
-    background-color: aqua;
-    padding-left: 50px;
-    margin-left: 50px;
-    box-shadow: 10px;
+.why p {
+    text-align: justify;
 }
 
 .pictmun {
@@ -163,34 +190,66 @@ li {
     background-color: rgba(0,0,0,0.8);
 }
 
-.jumbotron {
-    margin: 10px;
-}
-
-#about {
+.line1 {
     background-color: dodgerblue;
 }
 
-@media screen and (max-width: 992px)
+.message {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px)
 {
+    .slidetext{
+        padding-top: 30px;
+    }
     .think2{
         display: none;
     }
+    .pictmore{
+        display: none;
+    }
+    .head1 {
+        display: none;
+    }
+    .logo1 {
+        padding-top: 15px;
+    }
+    .logo2 {
+        padding-top: 15px;
+    }
 }
 
-@media screen and (min-width: 992px)
+@media screen and (min-width: 768px)
 {
+    .slidetext{
+        padding-top: 200px;
+    }
     .think1{
+        display: none;
+    }
+    .pictless{
+        display: none;
+    }
+    .head2 {
         display: none;
     }
 }
 
 .foot {
-    background-color: dodgerblue;
+    background-color: #1976D2;
+    color: white;
 }
 
 .copyright {
-    background-color: #0d80f0;
+    background-color: #1b71c6;
+    color: white;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: #1976D2;
 }
 
 .event-head {
@@ -255,11 +314,6 @@ li {
     color: #fff;
 }
 
-.footer-icons a {
-    text-decoration: none;
-    color: dodgerblue;
-}
-
 .modal-header {
     background-color: dodgerblue;
     color: white;
@@ -278,54 +332,6 @@ li {
     animation-duration: 1s; 
     -webkit-animation-duration: 1s;
     visibility: visible; 
-}
-
-.zoomout {
-    animation-name: ZoomOut;
-    animation-duration: 1s;
-}
-
-.zoomin {
-    animation-name: ZoomIn;
-    animation-duration: 1s;
-}
-
-.trans_navup {
-    animation-name: translatenavUp;
-    animation-duration: 1s;
-}
-
-.trans_navdown {
-    animation-name: translatenavDown;
-    animation-duration: 1s;
-}
-
-.pos {
-    position: relative;
-}
-
-@media only screen and (min-width : 768px) {
-    .head1 {
-        display: block;
-    }
-    .head2 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width : 768px) {
-    .head1 {
-        display: none;
-    }
-    .head2 {
-        display: block;
-    }
-    .logo1 {
-        padding-top: 15px;
-    }
-    .logo2 {
-        padding-top: 15px;
-    }
 }
 
 @keyframes slide {
@@ -349,46 +355,42 @@ li {
     }
 }
 
-@keyframes ZoomOut {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: .1;
-    }
-    100% {
-        opacity: 0;
-        transform: scale3d(.5,.5,.5);
-    } 
+.abt-data {
+    position: relative;
+    display: block;
+    font-family: Lato,cursive;
+    font-size: 130%;
+    text-align: justify;
+    color: dodgerblue;
+    margin-top: 10px;
+    line-height: 40px;
+    margin-bottom: 10px
 }
 
-@keyframes ZoomIn {
-    0% {
-        opacity: 0;
-        transform: scale3d(.5,.5,.5);
-    }
-    50% {
-        opacity: .3;
-    }
-    100% {
-        opacity: 1;
-    } 
+.munteam {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-@keyframes translatenavUp {
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-250%);
-    }
+.content {
+    margin-top: 10px;
 }
 
-@keyframes translatenavDown {
-    0% {
-        transform: translateY(-250%);
-    }
-    100% {
-        transform: translateY(0%);
+.message-content {
+    position: relative;
+    display: block;
+    font-family: Lato,cursive;
+    font-size: 130%;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 40px;
+    margin-bottom: 10px
+}
+
+
+@media screen and (max-width: 992px)
+{
+    .the{
+        display: none;
     }
 }

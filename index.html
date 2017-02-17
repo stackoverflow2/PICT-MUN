@@ -15,11 +15,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar" id="top">
         <div class="heading">
             <div class="container">
                 <div class="col-xs-2">
+                    <a href="index.html">
                     <img class="logo1 img-responsive" src="image/logo2.png">
+                    </a>
                 </div>
                 <div class="head1 col-xs-8 text-center">
                     <h1>PICT Model United Nations</h1>
@@ -30,12 +32,15 @@
                     <h5>25th-26th of March 2017</h5>
                 </div>
                 <div class="col-xs-2">
-                    <img class="logo2 img-responsive" src="image/logo2.png">
+                    <a href="http://pict.edu">
+                    <img class="logo2 img-responsive" src="image/Pict_logo.png">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="navi container-fluid">
             <div class="navbar-header">
+                <a class="navbar-brand" href="#">PICT-MUN</a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span style="background-color:black;" class="icon-bar"></span>
                     <span style="background-color:black;" class="icon-bar"></span>
@@ -44,35 +49,34 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="nav-home"><a href="#home" tabindex="1">Home</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" tabindex="2" href="#">About<span class="caret"></span></a>
+                    <li id="nav-home"><a href="#" tabindex="1">Home</a></li>
+                    <li id="nav-home"><a href="#events" tabindex="2">Committees</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" tabindex="3" href="#">About<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">PICT-MUN</a></li>
+                            <li><a href="about.html">PICT-MUN</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">PICT-PUNE</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Team PICT-MUN</a></li>
+                            <li><a href="aboutpict.html">PICT</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" tabindex="3" href="#">Conference<span class="caret"></span></a>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" tabindex="4" href="#">Conference<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li> <a href="#">PICT-MUN CONFERENCE-2017</a></li>
-                            <li class="divider"></li>
-                            <li> <a href="#">PICT-MUN Workshop-2016</a></li>
+                            <li> <a href="#">PICT-MUN Conference-2017</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" tabindex="4" href="#">Partners<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li> <a href="#">Sponsors </a></li>
-                            <li class="divider"></li>
-                            <li> <a href="#">Partners </a></li>
-                        </ul>
+                    <li id="nav-contactus"><a href="#contactus" tabindex="6">Contact us</a></li>
+                    <li id="nav-register">
+                        <button class="btn navbar-btn"><a href="https://www.townscript.com/e/pict-mun-2017-410434">Register now!</a></button>
                     </li>
-                    <li id="nav-contactus"><a href="#contactus" tabindex="5">Contact us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <div id="GoUp">
+        <a href="#top">
+            <span class="glyphicon glyphicon-menu-up"></span>
+        </a>
+    </div>
 
     <div id="home">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false">
@@ -84,61 +88,35 @@
 
             <div class="carousel-inner" role="listbox">
                 <!-- Item 1 -->
-                <div class="item active slide1">
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-md-3 text-center think1">
-                                <a href=#events>
-                                <h2 style="color:white" data-animation="animated bounceInDown">Register for</h2>
-                                <h2 style="color:white" data-animation="animated bounceInUp">MUN Conference</h2>
-                                </a>
-                            </div>
-                            <div class="col-md-3"></div>
-                            <a href="#events">
-                            <div class="col-md-6 text-center think2">
-                                <h1 style="color:white" data-animation="animated zoomIn">Register for the</h1>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="container">
-                            <div class="col-md-3"></div>
-                            <a href="#events">
-                            <div class="col-md-6 text-center think2">
-                                <h1 style="color:white" data-animation="animated zoomInUp">MUN Conference</h1>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="item active">
+                    
+                    <img class="img responsive"src="image/poster_agenda.jpg">
                 </div>
                 <!-- Item 2 -->
-                <div class="item slide2">
-                    <div class="row">
-                        <div class="container">
-                           <div class="col-md-3 text-center think1">
-                                <h2 style="color:white" data-animation="animated fadeInDown">Debate.Explore</h2>
-                                <h2 style="color:white" data-animation="animated fadeInUp">Deliver</h2>
+                <div class="item">
+                    <div class="slidetext">
+                            <div class="think1">
+                                <h5 style="color:white" data-animation="animated fadeInDown">Debate.Explore</h5>
+                                <h5 style="color:white" data-animation="animated fadeInUp">Deliver</h5>
                             </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 text-center think2">
+                            <div class="think2">
                                 <h1 style="color:white" data-animation="animated bounceInUp">Debate, Explore & Deliver</h1>
                             </div>
-                        </div>
                     </div>
+                    <img class="img responsive" src="image/carousel2.jpg" >
                 </div>
                 <!-- Item 3 -->
-                <div class="item slide3">
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-md-3 text-center think1">
-                                <h2 style="color:white" data-animation="animated fadeInDown">Think.Discuss</h2>
-                                <h2 style="color:white" data-animation="animated fadeInUp">Prosper</h2>
+                <div class="item">
+                    <div class="slidetext">
+                            <div class="think1">
+                                <h5 style="color:dodgerblue" data-animation="animated fadeInDown">Welcome to</h5>
+                                <h5 style="color:dodgerblue" data-animation="animated fadeInUp">PICT-MUN</h5>
                             </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 text-center think2">
-                                <h1 style="color:white" data-animation="animated zoomInUp">Think, Discuss & Prosper</h1>
+                            <div class="think2">
+                                <h1 style="color:dodgerblue" data-animation="animated zoomInUp">Welcome to PICT-MUN</h1>
                             </div>
-                        </div>
                     </div>
+                    <img class="img responsive" src="image/carousel4.jpg">
                 </div>
             </div>
 
@@ -152,17 +130,60 @@
             </a>
         </div>
     </div>
-
+    
     <div id="about">
         <div class="parallax" style="background-image:url(image/background3.jpg);  min-height: 100px !important;">
-            <div class="pictmun text-center">
-                <h1><strong>PICT-MUN</strong></h1>
-            </div>
+        <div class="pictmun text-center">
+            <h1><strong>PICT-MUN</strong></h1>
         </div>
+        </div>
+        <div class="line1">
         <div class="container-fluid">
             <div class="container" style>
                 <center><h2 style="color:white; padding-top: 12px; padding-bottom: 12px">A perfect platform to get educated, trained and finally step in the Professional World of Model United Nations</h2></center>
             </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="message">
+        <div class="container text-center">
+            <h1>From the Principal's Desk</h1>
+            <div style="background-color:black;height:1px;width:36%;margin-left:32%"></div>
+        </div>
+        <div class="container content">
+            <div class="col-sm-8 message-content">
+                <p>
+                    Dear Delegates,<br>
+                    It is with great pleasure that I introduce you to the first edition of the esteemed PICT-MUN. It is my strong belief that confidence builds when you have the courage to test it. PICT-MUN hopes to provide you with a platform to enhance your ability to think, to analyse and to use your mind to its extreme capacity so that you take that very first step to stepping into what is known as the real world. 
+                    Through this experience, we hope to provide you with an insight and an edge over the other competitors in the world today. 
+                    I welcome you to this mind-numbing debate and wish you luck with your endeavours.
+                    Regards,<br>
+                    P.T. Kulkarni<br>
+                    Principal, PICT
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" width="100%" src="image/Principal-400x500.jpg">
+            </div>
+        </div>
+    </div>
+    
+    <div id="news">
+        <div class="container">
+            <div class="why col-md-6">
+                <h1>Why MUN?</h1>
+                <p>
+                    MUN provides a brief history on the issue as it relates to your country.It provides your country's position on the issue.You will be able to know your country's position among the member states.You can discuss some of the past actions of your country on a particular issue.You can play the role that NGOs or regional organizations have to play in addressing the issue and present ideas for a resolution.
+                </p>
+            </div>
+            <div class="why col-md-6">
+            <h1>Why PICT-MUN?</h1>
+                <p>
+                    Here, at PICT, we encourage students to create and innovate, build trust and confidence. At PICT MUN, we hope to encourage young leaders to find their passion and explore their boundaries more than ever. As the youth of this nation, it is our responsibility to ensure the growth and development of our country and to do so, it is our responsibility to take a stand and see how we can make the world a better place than we found it.
+                    We promise you an enriching and simulating conference, one that will be remembered, so join us, delegates. Join us to change lives, yours, ours and the worlds.
+                </p>
+            </div> 
         </div>
     </div>
 
@@ -199,189 +220,97 @@
             </div>
             <div class="row slideanim">
                 <div class="col-md-4">
+                    <a href="#">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h2>United Nations Security Council</h2>
                         </div>
                         <div class="panel-body">
                             <p>Agenda: <strong>The South China Sea Conflict</strong></p>
-                            <p>Chairman: <strong>Aaa</strong></p>
+                            <p>Chairman: <strong>To be Declared</strong></p>
                         </div>
                         <div class="panel-footer">
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#agenda1">Register</button>
+                            <a href="https://www.townscript.com/e/pict-mun-2017-410434">
+                            <button class="btn btn-lg">Register</button>
+                            </a>
                         </div>
-                    </div> 
+                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
+                    <a href="#">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h2>United Nations Human Rights Council</h2>
                         </div>
                         <div class="panel-body">
                             <p>Agenda: <strong>The violation of human rights and humanitarian law inside the Syrian regions</strong></p>
-                            <p>Chairman: <strong>20</strong></p>
+                            <p>Chairman: <strong>Raavi Uttarwar</strong></p>
                         </div>
                         <div class="panel-footer">
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#agenda2">Register</button>
+                            <a href="https://www.townscript.com/e/pict-mun-2017-410434">
+                            <button class="btn btn-lg">Register</button>
+                            </a>
                         </div>
-                    </div> 
+                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
+                    <a href="#">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h2>United Nations General Assembly- ECOFIN</h2>
                         </div>
                         <div class="panel-body">
                             <p>Agenda: <strong>Global Bank Policies to avert recessions</strong></p>
-                            <p>Chairman: <strong>20</strong></p>
+                            <p>Chairman: <strong>To be Declared</strong></p>
                         </div>
                         <div class="panel-footer">
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#agenda3">Register</button>
+                            <a href="https://www.townscript.com/e/pict-mun-2017-410434">
+                            <button class="btn btn-lg">Register</button>
+                            </a>
                         </div>
-                    </div> 
+                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row slideanim">
                 <div class="col-md-2"></div>
                 <div class="col-md-4">
+                    <a href="#">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h2>League of Nations</h2>
                         </div>
                         <div class="panel-body">
                             <p>Agenda: <strong>The spread of Nazism</strong></p>
-                            <p>Chairman: <strong>Aaa</strong></p>
+                            <p>Chairman: <strong>To be Declared</strong></p>
                         </div>
                         <div class="panel-footer">
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#agenda4">Register</button>
+                            <a href="https://www.townscript.com/e/pict-mun-2017-410434">
+                            <button class="btn btn-lg">Register</button>
+                            </a>
                         </div>
-                    </div> 
+                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
+                    <a href="#">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h2>Council of Thrones</h2>
                         </div>
                         <div class="panel-body">
                             <p>Agenda: <strong>The situation in Westeros and the conflict of the throne</strong></p>
-                            <p>Chairman: <strong>20</strong></p>
+                            <p>Chairman: <strong>To be Declared</strong></p>
                         </div>
                         <div class="panel-footer">
-                            <button class="btn btn-lg" data-toggle="modal" data-target="#agenda5">Register</button>
+                            <a href="https://www.townscript.com/e/pict-mun-2017-410434">
+                            <button class="btn btn-lg">Register</button>
+                            </a>
                         </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="agenda1" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">The South China Sea Conflict</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>Committee: United Nations Security Council</li>
-                        <li>The conflict or dispute about the South China Sea has been going on for a very long time. Basically, it is a territorial dispute between a set of countries, where they're all fighting for claim of several regions of the South China Sea.</li> 
-                        <li>Many countries want it to be an international border so that the high trade through the sea can function as it is, whereas others want it to get inside their borders.</li>
-                        <li>The committee shall focus on how best to try and resolve this issue and will look at it from several angles and make sure a sufficient conclusion can be come up with.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="agenda2" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">The violation of human rights and humanitarian law inside the Syrian regions</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>Committee: United Nations Human Rights Council</li>
-                        <li> The war between the Syrian government and the Rebels has been going on for a really long time now. Due to this civil war, the civilians still living in that area are suffering through horrible conditions, such conditions that no human should suffer through. They are being denied basic human rights.</li> 
-                        <li>The committee will focus on coming to a conclusion as to how to stop this situation from worsening and how to provide comfort to those suffering there. </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="agenda3" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Global Bank Policies to avert recessions</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>Committee: United Nations General Assembly- ECOFIN</li>
-                        <li>Since the major economical setbacks in North America as well as Europe, the UNGA ECOFIN will meet and discuss what measure member states can come up with to avoid such a drastic recession again.</li> 
-                        <li>The committee shall focus on discussing and amending the Global Bank Policies so as to best avert another recession. </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="agenda4" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">The spread of Nazism</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>Committee: League of Nations</li>
-                        <li>The League of Nations was what you could call a pre-UN. It was formed with the same motive as the United Nations but it failed majorly due to certain setbacks (such as, ever member state had a veto, thus no resolution could effectively be passed).</li>
-                        <li>This historical committee shall focus on how to work with these conditions on the agenda where Nazism is strongly spreading through Europe and how to stop this, during the Second World War.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="agenda5" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">The situation in Westeros and the conflict of the throne</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>Committee: Council of Thrones</li>
-                        <li>Game of Thrones Fandom!</li>
-                        <li>This council will focus on the current situation in Westeros (i.e. Season 6 for TV fandom, book 5 for readers.)</li> 
-                        <li>Several issues will be discussed, including the legitimacy of the throne holder, territorial disputes, freedom of the North etc.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -392,8 +321,8 @@
     <footer id="contactus">
         <div class="foot">
             <div class="container-fluid text-center">
-            <div class="col-md-2"></div>
-            <div class="col-md-4">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
                 <h2>Contact Us</h2>
                 <div>
                     <p><i class="fa fa-phone"></i>+919503748779</p>
@@ -403,20 +332,19 @@
                 </div>
                 <div>
                     <p><i class="fa fa-envelope"></i>
-                        <a href="mailto:pictmun@gmail.com" style="text-decoration:none;color:#333333">pictmun@gmail.com</a></p>
+                        <a href="mailto:pictmun@gmail.com" style="text-decoration:none;color:white">pictmun@gmail.com</a></p>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-sm-4 text-center">
                 <h2>Follow Us</h2>
                 <div class="footer-icons">
-                    <a href="https://www.facebook.com/pictmun/?view_public_for=791800570959719"><i class="fa fa-facebook" style="font-size: 30px;color:#333333;"></i>__</a>
-                    <a href="#"><i class="fa fa-twitter" style="font-size: 30px;color:#333333;"></i>__</a>
-                    <a href="#"><i class="fa fa-linkedin" style="font-size: 30px;color:#333333;"></i></a>
+                    <a href="https://www.facebook.com/pictmun/?view_public_for=791800570959719"><i class="fa fa-facebook" style="font-size: 30px;color:white;"></i>__</a>
+                    <a href="#"><i class="fa fa-twitter" style="font-size: 30px;color:white;"></i>__</a>
+                    <a href="#"><i class="fa fa-linkedin" style="font-size: 30px;color:white;"></i></a>
                 </div>
             </div>
             </div>
         </div>
-        <div style="width:100%; height:1px; background-color:#333333;"></div>
         <div class="copyright">
             <div class="container">
                 <h4 class="text-center">Developed by: WebTeam@PICTMUN</h4>
