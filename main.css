@@ -8,7 +8,7 @@
     src: url(fonts/brothers-bold.ttf);
 }
 
-*{
+* {
     position: relative;
     padding: 0px;
     margin: 0px;
@@ -41,8 +41,8 @@ li {
 #GoUp{
     z-index: 1000;
     position: fixed;
-    bottom: 30px;
-    right: 50px;
+    bottom: 1%;
+    right: 1.5%;
     background-color: black;
     height: 50px;
     width: 50px;
@@ -62,6 +62,8 @@ li {
 .navbar-brand {
     font-family: Lato,cursive;
     color: dodgerblue;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .navi {
@@ -88,6 +90,11 @@ li {
     height: 100%;
 }
 
+.navbar-nav li a {
+    text-align: center;
+    font-size: 120%;
+}
+
 .navbar-nav li a:hover {
     color: dodgerblue !important;
     background-color: white !important;
@@ -95,6 +102,8 @@ li {
 
 .dropdown-menu a{
     color: dodgerblue !important;
+    text-align: center;
+    font-size: 100% !important;
 }
 
 #home {
@@ -219,6 +228,12 @@ li {
     .logo2 {
         padding-top: 15px;
     }
+    .message-content{
+        line-height: 25px !important;
+    }
+    .carousel-indicators {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px)
@@ -338,6 +353,7 @@ li {
     0% {
         opacity: 0;
         transform: translateY(30%);
+        -webkit-transform: translateY(30%);
     }
     100% {
         opacity: 1;
@@ -352,6 +368,7 @@ li {
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+        transform: translateY(0%);
     }
 }
 
@@ -391,6 +408,9 @@ li {
 @media screen and (max-width: 992px)
 {
     .the{
+        display: none;
+    }
+    .divider{
         display: none;
     }
 }
