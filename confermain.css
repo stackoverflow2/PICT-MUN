@@ -1,0 +1,244 @@
+* {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato/Lato-Bold.ttf);
+}
+
+li {
+    font-family: Lato,cursive;
+}
+
+.head1 h1{
+    color: #333333;
+}
+
+.navbar {
+    margin: 0px 0px 0px 0px;
+}
+
+.navbar-brand {
+    font-family: Lato,cursive;
+    color: dodgerblue;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navi {
+    opacity: 1;
+    background-color: black;
+    z-index: 6;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.3);
+}
+
+.navi button {
+    background-color: white;
+}
+
+.navi button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.heading {
+    background-color: #eeeeee;
+}
+
+#register {
+    height: 100%;
+}
+
+.navbar-nav li a {
+    text-align: center;
+    font-size: 120%;
+}
+
+.navbar-nav li a:hover {
+    color: dodgerblue !important;
+    background-color: white !important;
+}
+
+.dropdown-menu a{
+    color: dodgerblue !important;
+    text-align: center;
+    font-size: 100% !important;
+}
+
+.btn-lg{
+    
+    background-color:dodgerblue;
+    
+}
+.header_data{
+    text-align: center;
+}
+.header_data p{
+        font-size:15px;    
+}
+.register
+{
+    height: 525px;
+    box-shadow: 0px 5px 2px rgba(0,0,0,0.5);
+    padding: 0px;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+
+.header_regi{
+    
+    background-color: dodgerblue;
+    text-align: center;
+    margin: 0px;
+    
+    
+}
+.header_conference{
+    
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+h1{
+    
+    color: aliceblue;
+    font-family: Lato;
+    
+}
+
+h4{
+    
+    color: aliceblue;
+    font-family: Lato;
+    margin: 0px;
+    padding: 10px;
+    
+    
+}
+.conf_desc{
+    
+    text-align: justify;
+    font-size: 17px;
+    font-family: Lato;
+    background-color: ghostwhite;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 31px;
+    padding: 10px;
+        
+}
+@media screen and (max-width: 992px)
+{
+    h1{
+       
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    h4{
+       
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom:20px; 
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .register{
+      height: 275px;
+    margin-top:10px;     
+    box-shadow: 0px 5px 2px rgba(0,0,0,0.5);
+    padding: 0px;
+    margin-bottom:10px; 
+    } 
+
+@media screen and (max-width: 992px)
+{
+    .the{
+        display: none;
+    }
+}
+
+.about-mun {
+    position: relative;
+    display: block;
+    height: 600px;
+    padding: 10px;
+    margin-bottom:20px;
+    background-color: ghostwhite;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.abtmun-header {
+    position: relative;
+    text-align: center;
+    font-family: Lato;
+    font-size: 35px;
+    border-bottom: 1px solid dimgrey;
+    border: collapse;
+    background-color: royalblue;
+    color: white;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.3);
+}
+.abtmun-data {
+    position: relative;
+    display: block;
+    font-family: sans-serif;
+    font-size: 130%;
+    text-align: justify;
+    background-color:dodgerblue;
+    color: aliceblue;
+    margin-top: 10px;
+    line-height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px
+} 
+
+.abtpict-header {
+    position: relative;
+    text-align: center;
+    font-family: Lato;
+    font-size: 35px;
+    border-bottom: 1px solid dimgrey;
+    border: collapse;
+    background-color: royalblue;
+    color: white;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.3);
+}
+.abtpict-data {
+   position: relative;
+    display: block;
+    font-family: sans-serif;
+    font-size: 130%;
+    text-align: justify;
+    background-color:dodgerblue;
+    color: aliceblue;
+    margin-top: 10px;
+    line-height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    background-color: black;
+    padding-top: 49px;
+    padding-bottom: 48px;
+    padding-left: 35px;
+    padding-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        
+}
