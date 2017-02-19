@@ -64,6 +64,12 @@ li {
     color: dodgerblue;
     padding-top: 0px;
     padding-bottom: 0px;
+    z-index: 1;
+}
+
+.navbar-brand button:hover {
+    background-color: dodgerblue !important;
+    color: white !important;
 }
 
 .navi {
@@ -277,7 +283,7 @@ li {
 
 .event-head p{
     color: white;
-    font-family: Lato;
+    font-family: Lato,cursive;
     font-size: 35px;
 }
 
